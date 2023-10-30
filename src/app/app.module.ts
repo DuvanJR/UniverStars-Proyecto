@@ -8,6 +8,7 @@ import { MyLoginComponent } from 'src/home/my-login/my-login.component';
 import { MyHomeComponent } from 'src/home/my-home/my-home.component';
 import { SharedModule } from './shared/shared.module';
 import { ContenedorComponentComponent } from './ContenedorComponent/ContenedorComponent.component';
+import { HomeComponent } from './pages/home/home.component';
 
 
 @NgModule({
@@ -15,13 +16,16 @@ import { ContenedorComponentComponent } from './ContenedorComponent/ContenedorCo
     AppComponent,
     MyLoginComponent, 
     MyHomeComponent,
-      ContenedorComponentComponent
+    ContenedorComponentComponent,
+    HomeComponent,
+
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SharedModule
+    SharedModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

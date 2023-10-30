@@ -20,8 +20,8 @@ export class MyLoginComponent {
       user: ['', [Validators.required, Validators.maxLength(15)]],
       password: ['', [Validators.required]],
     });
-    console.log(this.loginForm);
-    console.log(this.user, this.password);
+    /* console.log(this.loginForm);
+    console.log(this.user, this.password); */
   }
 
   login() {
