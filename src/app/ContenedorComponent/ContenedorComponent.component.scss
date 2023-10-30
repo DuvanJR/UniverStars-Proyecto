@@ -1,0 +1,24 @@
+.main {
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  margin: 15px;
+}
+
+.example-card {
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.example-header-image {
+  background-image: url("../../assets/img/Universidad Cartagena.jpg");
+  background-size: cover;
+}
+
+.color {
+  background-color: rgba(153, 169, 173, 0.13);
+}
+
+.title{
+    color: white;
+}

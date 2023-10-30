@@ -1,0 +1,51 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.color {
+  background-color: #576b70;
+  letter-spacing: 0.0625em;
+  gap: 32px;
+  height: 3em;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.titulo {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.icon-logo {
+  font-size: 45px;
+}
+
+.material-symbols-outlined{
+    cursor: pointer;
+}
+
+.container-user-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-right: 25px;
+  padding-right: 20px;
+}
+
+.icon-user {
+  font-size: 35px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
