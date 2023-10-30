@@ -30,8 +30,12 @@ body {
 
 //Linea de los campos input
 .mdc-text-field--outlined:not(.mdc-text-field--disabled)
-  .mdc-notched-outline__leading {
-  border-color: rgba(243, 243, 243, 0.232) !important;
+  .mdc-notched-outline__leading,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled)
+  .mdc-notched-outline__notch,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled)
+  .mdc-notched-outline__trailing {
+  border-color: rgba(243, 243, 243, 0.232) ;
 }
 
 mdc-text-field:not(.mdc-text-field--disabled) .mdc-floating-label {
