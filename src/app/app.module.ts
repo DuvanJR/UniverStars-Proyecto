@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MyLoginComponent } from 'src/home/my-login/my-login.component';
-import { MyHomeComponent } from 'src/home/my-home/my-home.component';
+import { MyHomeComponent } from 'src/home/toolbar/my-toolbar.component';
 import { SharedModule } from './shared/shared.module';
 import { ContenedorComponentComponent } from './ContenedorComponent/ContenedorComponent.component';
 import { HomeComponent } from './pages/home/home.component';

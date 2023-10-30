@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-ContenedorComponent',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContenedorComponentComponent {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   filtrar(){
     const result = this.informacion.filter(( universidades ) =>  universidades.titulo.includes('Cartagena'))
@@ -17,9 +18,14 @@ export class ContenedorComponentComponent {
 
 
   informacion  = [
-    { titulo: 'Universidad de Cartagena', contenido: 'Este es el contenido del contenedor 1.', imagen: 'assests/img/Universidad Cartagena' },
+    { titulo: 'Universidad de Cartagena', contenido: 'Este es el contenido del contenedor 1.' },
     { titulo: 'UTB', contenido: 'Este es el contenido del contenedor 2.' },
     { titulo: 'Tecnologico Comfenalco', contenido: 'Este es el contenido del contenedor 3.' },
+    { titulo: 'Universidad de San Buenaventura', contenido: 'Este es el contenido del contenedor 4.' },
     // ... Más objetos de datos
   ];
+
+  see(){
+    this.router.navigate(['universtars/menu/ver-detalle']);
+  }
 }

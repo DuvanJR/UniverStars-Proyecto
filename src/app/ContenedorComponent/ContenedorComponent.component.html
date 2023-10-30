@@ -13,13 +13,13 @@
     </mat-card-header>
     <img mat-card-image src="../../assets/img/Universidad Cartagena.jpg">
     <mat-card-content>
-      <p>
+      <p class="contenido">
         {{item.contenido}}
       </p>
     </mat-card-content>
     <mat-card-actions>
       <button mat-button>LIKE</button>
-      <button mat-button>Comentar</button>
+      <button mat-button (click)="see()">Comentar</button>
     </mat-card-actions>
   </mat-card>
   

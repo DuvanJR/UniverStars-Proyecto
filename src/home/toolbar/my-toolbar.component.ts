@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-my-home',
-  templateUrl: './my-home.component.html',
-  styleUrls: ['./my-home.component.scss']
+  selector: 'app-my-toolbar',
+  templateUrl: './my-toolbar.component.html',
+  styleUrls: ['./my-toolbar.component.scss']
 })
 export class MyHomeComponent {
   constructor(private router: Router) {}
