@@ -9,6 +9,7 @@ import { MyHomeComponent } from 'src/home/my-home/my-home.component';
 import { SharedModule } from './shared/shared.module';
 import { ContenedorComponentComponent } from './ContenedorComponent/ContenedorComponent.component';
 import { HomeComponent } from './pages/home/home.component';
+import { SeeDetailsComponent } from './pages/see-details/see-details.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { HomeComponent } from './pages/home/home.component';
     MyHomeComponent,
     ContenedorComponentComponent,
     HomeComponent,
+    SeeDetailsComponent,
 
    ],
   imports: [

@@ -9,6 +9,13 @@ export class ContenedorComponentComponent {
 
   constructor() { }
 
+  filtrar(){
+    const result = this.informacion.filter(( universidades ) =>  universidades.titulo.includes('Cartagena'))
+    this.informacion=result;
+  }
+
+
+
   informacion  = [
     { titulo: 'Universidad de Cartagena', contenido: 'Este es el contenido del contenedor 1.', imagen: 'assests/img/Universidad Cartagena' },
     { titulo: 'UTB', contenido: 'Este es el contenido del contenedor 2.' },
