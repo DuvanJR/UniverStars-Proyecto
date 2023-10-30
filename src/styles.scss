@@ -35,7 +35,7 @@ body {
   .mdc-notched-outline__notch,
 .mdc-text-field--outlined:not(.mdc-text-field--disabled)
   .mdc-notched-outline__trailing {
-  border-color: rgba(243, 243, 243, 0.232) ;
+  border-color: rgba(243, 243, 243, 0.232) !important;
 }
 
 mdc-text-field:not(.mdc-text-field--disabled) .mdc-floating-label {
@@ -54,7 +54,14 @@ mdc-text-field:not(.mdc-text-field--disabled) .mdc-floating-label {
   color: rgba(243, 243, 243, 0.435) !important;
 }
 
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  background-color: rgba(153, 169, 173, 0.13);;
+}
+
+
 mat-toolbar[_ngcontent-gho-c98] {
   color: #040404;
   font-weight: 600 !important;
 }
+
+

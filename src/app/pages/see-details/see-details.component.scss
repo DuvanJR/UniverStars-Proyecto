@@ -1,22 +1,50 @@
-.main{
-    margin: 55px 16px 0 28px;
-    max-width: 1660px;
+.main {
+  margin: 55px 16px 0 28px;
+  max-width: 1660px;
+  display: flex;
+  gap: 60px;
+  justify-content: center;
 }
 
 .example-card {
-    max-width: 400px;
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
+}
+
+.color {
+  background-color: rgba(153, 169, 173, 0.13);
+}
+
+.texto {
+  color: white;
+}
+
+.comentarios {
+  max-width: 550px;
+}
+
+.title {
+  color: white;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.card-comentarios{
+    color: white;
+    padding: 25px;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
   }
   
-  .example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
+  .example-full-width {
+    width: 100%;
   }
-
-  .color {
-    background-color: rgba(153, 169, 173, 0.13);
-  }
-
-.texto{
-    color: white;
-}
   
