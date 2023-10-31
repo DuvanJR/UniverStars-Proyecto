@@ -73,7 +73,15 @@
 
 .material-symbols-outlined {
   color: white;
-  font-size: 50px;
+  font-size: 45px;
   margin: 24px 0 0px 46px;
   cursor: pointer;
+}
+
+.material-symbols-outlined:hover {
+  color: white;
+  font-size: 45px;
+  margin: 24px 0 0px 46px;
+  cursor: pointer;
+  color: red;
 }
