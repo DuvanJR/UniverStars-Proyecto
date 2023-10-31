@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   templateUrl: './my-toolbar.component.html',
   styleUrls: ['./my-toolbar.component.scss']
 })
-export class MyHomeComponent {
+export class MyToolbarComponent {
   constructor(private router: Router) {}
 
   cerrarSesion() {
