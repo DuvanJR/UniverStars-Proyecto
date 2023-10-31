@@ -15,13 +15,15 @@ export class SeeDetailsComponent {
   }
 
   comentarioTemporal: string = ''; 
-  listaComentarios: string[] = []; 
+  listaComentarios: { numero: number, comentario: string }[] = [];
+  contadorComentarios: number = 0; // Inicializa el contador en 0
 
   
 
   agregarComentario() {
-    this.listaComentarios.push(this.comentarioTemporal);
-    this.comentarioTemporal = ''; // Reinicia el textarea temporal
+    this.contadorComentarios++;
+    this.listaComentarios.push({ numero: this.contadorComentarios, comentario: this.comentarioTemporal });
+    this.comentarioTemporal = '';
 
     console.log(this.listaComentarios, this.comentarioTemporal)
   }

@@ -1,36 +1,49 @@
-<button class="btn-back" (click)="back()">Atras</button>
+<span class="material-symbols-outlined" (click)="back()">
+  close
+</span>
 
-<div class="main">
-  <mat-card class="example-card color">
-    <mat-card-header>
-      <div class="example-header-image"></div>
-      <mat-card-title class="texto">TITULO DE LA UNIVERSIDAD</mat-card-title>
-    </mat-card-header>
-    <img mat-card-image src="../../assets/img/Universidad Cartagena.jpg" />
-    <mat-card-content>
-      <p class="texto">DESCRIPCION DE LA UNIVERSIDAD</p>
-    </mat-card-content>
-
-    
+<div class="card-content-comments">
+  <div class="main">
+    <mat-card class="example-card color">
+      <mat-card-header>
+        <div class="example-header-image"></div>
+        <mat-card-title class="texto">TITULO DE LA UNIVERSIDAD</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="../../assets/img/Universidad Cartagena.jpg" />
+      <mat-card-content>
+        <p class="texto">DESCRIPCION DE LA UNIVERSIDAD</p>
+      </mat-card-content>
+  
       <mat-form-field class="example-full-width">
-        <mat-label >Escriba un comentario...</mat-label>
-        <textarea matInput [(ngModel)]="comentarioTemporal"></textarea>
+        <mat-label>Escriba un comentario...</mat-label>
+        <textarea matInput [(ngModel)]="comentarioTemporal" #message
+          maxlength="50"></textarea>
+        <mat-hint align="end" class="number-textarea">{{message.value.length}} /
+          50</mat-hint>
       </mat-form-field>
-
+  
       <mat-card-actions>
-        <button mat-button class="texto" (click)="agregarComentario()">
+        <button mat-button class="btn-text-comment" (click)="agregarComentario()">
           <span class="texto">COMENTAR</span>
         </button>
       </mat-card-actions>
-
-   
-  </mat-card>
-
+    </mat-card>
+  </div>
+  
   <div class="comentarios">
     <h1 class="title">COMENTARIOS</h1>
     <div class="card-comentarios">
-      <div *ngFor="let comentario of listaComentarios" >
-        <p>{{ comentario }}</p>
+      <div *ngFor="let comentario of listaComentarios">
+        <mat-card class="comments">
+          <mat-card-header>
+            <mat-card-title>{{ comentario.numero }}</mat-card-title>
+            <mat-card-subtitle>{{ comentario.comentario }}</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-actions>
+            <button mat-button>LIKE</button>
+          </mat-card-actions>
+        </mat-card>
+  
       </div>
     </div>
   </div>

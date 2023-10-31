@@ -9,6 +9,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [],
@@ -28,7 +30,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatToolbarModule, 
     MatButtonModule, 
     MatIconModule,
-
+    MatDividerModule,
+    MatListModule
     
   ],
   imports: [
