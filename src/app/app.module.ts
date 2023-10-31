@@ -10,6 +10,7 @@ import { SharedModule } from './shared/shared.module';
 import { ContenedorComponentComponent } from './ContenedorComponent/ContenedorComponent.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SeeDetailsComponent } from './pages/see-details/see-details.component';
+import { FilterComponent } from './shared/filter/filter.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { SeeDetailsComponent } from './pages/see-details/see-details.component';
     ContenedorComponentComponent,
     HomeComponent,
     SeeDetailsComponent,
+    FilterComponent
 
    ],
   imports: [

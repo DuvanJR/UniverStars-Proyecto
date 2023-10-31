@@ -1,9 +1,7 @@
-<button class="btn-filtrar" (click)="filtrar()">
- <span> Filtrar</span>
-</button>
+<app-filter (todosCiudad)="getAllCity()" (result)="filtrar($event)"/>
 
 <div class="main">
-  <mat-card class="example-card color" *ngFor="let item of informacion; let i = index">
+  <mat-card class="example-card color" *ngFor="let item of informacion">
       <mat-card-header >
         <div  class="example-header-image" ></div>
         <mat-card-title> 

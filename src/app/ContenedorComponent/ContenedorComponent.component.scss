@@ -1,10 +1,9 @@
 .main {
   display: flex;
-  gap: 20px;
   flex-wrap: wrap;
-  margin: 15px;
-
   justify-content: center;
+  gap: 20px;
+  padding-top: 40px;
 }
 
 .example-card {
@@ -46,24 +45,4 @@
   border-radius: 10px;
   background-color: rgba(182, 182, 182, 0.07);
   margin-left: 8px;
-}
-
-.btn-filtrar {
-  font-size: 18px;
-  margin: 24px 0 0px 46px;
-  cursor: pointer;
-  border-radius: 15px;
-  padding: 10px;
-  background-color: #4e606f;
-  color: white;
-}
-
-.btn-filtrar:hover {
-  font-size: 18px;
-  margin: 24px 0 0px 46px;
-  cursor: pointer;
-  border-radius: 15px;
-  padding: 10px;
-  background-color: #abacad91;
-  color: black;
 }
