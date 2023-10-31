@@ -1,8 +1,10 @@
 .main {
   display: flex;
   gap: 20px;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
   margin: 15px;
+
+  justify-content:center ;
 }
 
 .example-card {
@@ -25,4 +27,16 @@
 
 .title{
     color: white;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+}
+
+.col {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 5px;
 }

@@ -13,4 +13,16 @@ export class SeeDetailsComponent {
   back(){
     this.router.navigate(['universtars/menu']);
   }
+
+  comentarioTemporal: string = ''; 
+  listaComentarios: string[] = []; 
+
+  
+
+  agregarComentario() {
+    this.listaComentarios.push(this.comentarioTemporal);
+    this.comentarioTemporal = ''; // Reinicia el textarea temporal
+
+    console.log(this.listaComentarios, this.comentarioTemporal)
+  }
 }
