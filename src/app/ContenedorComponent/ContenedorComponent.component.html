@@ -1,23 +1,25 @@
-<app-filter (todosCiudad)="getAllCity()" (result)="filtrar($event)"/>
+<app-filter (todosCiudad)="getAllCity()" (result)="filtrar($event)" />
 
 <div class="main">
   <mat-card class="example-card color" *ngFor="let item of informacion">
-      <mat-card-header >
-        <div  class="example-header-image" ></div>
-        <mat-card-title> 
-          <span class="title">{{item.titulo}}</span>
-        </mat-card-title>
-        <mat-card-subtitle> </mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image src="../../assets/img/Universidad Cartagena.jpg">
-      <mat-card-content>
-        <p class="contenido">
-          {{item.contenido}}
-        </p>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-button (click)="see()" class="comment">Comentar</button>
-      </mat-card-actions>
+    <mat-card-header>
+      <mat-card-title>
+        <span class="title">{{item.titulo}}</span>
+      </mat-card-title>
+      <mat-card-subtitle> </mat-card-subtitle>
+    </mat-card-header>
+    <div class="example-header-image">
+      <img mat-card-image [src]="item.src" alt="{{item.titulo}}" width="310"
+      height="230" >
+    </div>
+    <mat-card-content>
+      <p class="contenido">
+        {{item.contenido}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="see()" class="comment">Comentar</button>
+    </mat-card-actions>
   </mat-card>
-  
+
 </div>

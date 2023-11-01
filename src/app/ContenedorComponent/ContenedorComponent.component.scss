@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
   padding-top: 40px;
 }
 
@@ -11,10 +11,10 @@
   border-radius: 10px;
 }
 
-.example-header-image {
-  background-image: url("../../assets/img/Universidad Cartagena.jpg");
-  background-size: cover;
-}
+/* .example-header-image {
+  display: flex;
+  justify-content: center;
+} */
 
 .color {
   background-color: rgba(153, 169, 173, 0.13);
