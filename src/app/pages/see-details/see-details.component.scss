@@ -38,6 +38,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  gap: 20px;
 }
 
 .text-description {
@@ -49,19 +50,20 @@
 .container-comments {
   display: flex;
   border-radius: 10px;
-  border: 2px solid #ccc;
-  flex-direction: column;
+  border: 2px solid #5858587e;
+  justify-content: space-between;
+  padding: 30px;
 }
 
-.card-comment{
+.card-comment {
   display: flex;
-  max-width: 550px;
   padding: 30px;
   flex-direction: column;
+  width: 40%;
   align-items: center;
 }
 
-.example-full-width{
+.example-full-width {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -77,17 +79,17 @@
 .btn-comment {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
-.number-textarea{
+.number-textarea {
   font-size: 14px;
   color: white;
 }
 
-.comments{
+.comments {
   display: flex;
-  margin: 50px;
-  max-width: 300px;
+  margin: 8px;
 }
 
 .material-symbols-outlined {
@@ -100,5 +102,30 @@
   color: white;
   font-size: 45px;
   cursor: pointer;
-  color: red;
+}
+
+.list-comment {
+  display: flex;
+  border-radius: 15px;
+  border: 2px solid rgba(182, 182, 182, 0.07);
+}
+
+.description-country {
+  display: flex;
+  gap: 10px;
+}
+
+.caja-comentarios {
+  font-size: 16px;
+  margin-right: 100px;
+  width: 550px;
+}
+
+.title-comments {
+  color: white;
+  font-size: 25px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
