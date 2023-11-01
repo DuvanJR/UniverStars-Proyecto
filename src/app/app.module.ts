@@ -11,6 +11,8 @@ import { ContenedorComponentComponent } from './ContenedorComponent/ContenedorCo
 import { HomeComponent } from './pages/home/home.component';
 import { SeeDetailsComponent } from './pages/see-details/see-details.component';
 import { FilterComponent } from './shared/filter/filter.component';
+import { SeekerComponent } from './shared/seeker/seeker.component';
+
 
 
 @NgModule({
@@ -21,7 +23,8 @@ import { FilterComponent } from './shared/filter/filter.component';
     ContenedorComponentComponent,
     HomeComponent,
     SeeDetailsComponent,
-    FilterComponent
+    FilterComponent,
+    SeekerComponent
 
    ],
   imports: [

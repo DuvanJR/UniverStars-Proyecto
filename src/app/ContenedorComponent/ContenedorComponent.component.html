@@ -1,4 +1,8 @@
-<app-filter (todosCiudad)="getAllCity()" (result)="filtrar($event)" />
+<div class="btn-nav">
+  <app-filter (todosCiudad)="getAllCity()" (result)="filtrar($event)" />
+  <app-seeker class="btn-seeker"/>
+</div>
+
 
 <div class="main">
   <mat-card class="example-card color" *ngFor="let item of informacion">
