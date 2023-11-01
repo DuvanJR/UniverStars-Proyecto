@@ -10,15 +10,17 @@
       <mat-card-title>
         <span class="title">{{item.titulo}}</span>
       </mat-card-title>
-      <mat-card-subtitle> </mat-card-subtitle>
     </mat-card-header>
     <div class="example-header-image">
       <img mat-card-image [src]="item.src" alt="{{item.titulo}}" width="370"
       height="230" >
     </div>
-    <mat-card-content>
+    <mat-card-content class="container-text">
       <p class="contenido">
         {{item.contenido}}
+      </p>
+      <p class="contenido">
+       <strong>CIUDAD:</strong> {{item.ciudad}}
       </p>
     </mat-card-content>
     <mat-card-actions>
